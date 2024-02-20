@@ -5,9 +5,9 @@ iv = "youtube_encyptyo"
 salt = "youtube_AesEncryption"
 
 #AWS Access And Secret key
-aws_access_key = "your_encrypted_access_key"
-aws_secret_key = "your_encrypted_secret_key"
-bucket_name = "youtube-project-testing"
+aws_access_key = "xS+BuTV+rpDUIhwxFMi8+mvIqnKWZ0lyqlypyOL5t3c="
+aws_secret_key = "4y1NqCmD1Po/0Bvetm93WwiCXpY5d0Fqd06+3S/lsX35PKeYzF0C0L1MbdRDXByE"
+bucket_name = "fahad-sales-project"
 s3_customer_datamart_directory = "customer_data_mart"
 s3_sales_datamart_directory = "sales_data_mart"
 s3_source_directory = "sales_data/"
@@ -17,11 +17,11 @@ s3_processed_directory = "sales_data_processed/"
 
 #Database credential
 # MySQL database connection properties
-database_name = "youtube_project"
+database_name = "sales_data"
 url = f"jdbc:mysql://localhost:3306/{database_name}"
 properties = {
     "user": "root",
-    "password": "password",
+    "password": "root",
     "driver": "com.mysql.cj.jdbc.Driver"
 }
 
@@ -41,8 +41,8 @@ mandatory_columns = ["customer_id","store_id","product_name","sales_date","sales
 
 
 # File Download location
-local_directory = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\file_from_s3\\"
-customer_data_mart_local_file = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\customer_data_mart\\"
-sales_team_data_mart_local_file = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\sales_team_data_mart\\"
-sales_team_data_mart_partitioned_local_file = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\sales_partition_data\\"
-error_folder_path_local = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\error_files\\"
+local_directory = "C:\\Users\\moham\OneDrive\\Desktop\\Project Data\\file_from_s3\\"
+customer_data_mart_local_file = "C:\\Users\\moham\\OneDrive\\Desktop\\Project Data\\customer_mart\\"
+sales_team_data_mart_local_file = "C:\\Users\\moham\\OneDrive\\Desktop\\Project Data\\sales_team_data_mart\\"
+sales_team_data_mart_partitioned_local_file = "C:\\Users\\moham\\OneDrive\\Desktop\\Project Data\\sales_partition_data\\"
+error_folder_path_local = "C:\\Users\\moham\\OneDrive\\Desktop\\Project Data\\error_files"

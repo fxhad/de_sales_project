@@ -20,7 +20,7 @@ sales_persons = {
     123: [7, 8, 9]
 }
 
-file_location = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data"
+file_location = "C:\\Users\\moham\\OneDrive\\Desktop\\Python\\Data Engineering\\Sales_data"
 
 if not os.path.exists(file_location):
     os.makedirs(file_location)

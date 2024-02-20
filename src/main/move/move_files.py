@@ -15,7 +15,7 @@ def move_s3_to_s3(s3_client, bucket_name, source_prefix, destination_prefix):
                                               'Key': source_key}, Key=destination_key)
 
             s3_client.delete_object(Bucket=bucket_name, Key=source_key)
-        return f"Data Moved succesfully from {source_prefix} to {destination_prefix}"
+        return f"Data Moved successfully from {source_prefix} to {destination_prefix}"
     except Exception as e:
         logger.error(f"Error moving file : {str(e)}")
         traceback_message = traceback.format_exc()
@@ -23,7 +23,7 @@ def move_s3_to_s3(s3_client, bucket_name, source_prefix, destination_prefix):
         raise e
 
 
-def move_s3_to_s3(s3_client, bucket_name, source_prefix, destination_prefix,file_name=None):
+def move_s3_o_s3(s3_client, bucket_name, source_prefix, destination_prefix,file_name=None):
     try:
         response = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=source_prefix)
 
@@ -37,7 +37,7 @@ def move_s3_to_s3(s3_client, bucket_name, source_prefix, destination_prefix,file
                                                   'Key': source_key}, Key=destination_key)
 
                 s3_client.delete_object(Bucket=bucket_name, Key=source_key)
-            # return f"Data Moved succesfully from {source_prefix} to {destination_prefix}"
+            # return f"Data Moved successfully from {source_prefix} to {destination_prefix}"
         else:
             for obj in response.get('Contents', []):
                 source_key = obj['Key']

@@ -24,13 +24,13 @@ sales_persons = {
 start_date = datetime(2023, 3, 3)
 end_date = datetime(2023, 8, 20)
 
-file_location = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data"
+file_location = "C:\\Users\\moham\\OneDrive\\Desktop\\Python\\Data Engineering\\Sales_data"
 csv_file_path = os.path.join(file_location, "sales_data.csv")
 with open(csv_file_path, "w", newline="") as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(["customer_id", "store_id", "product_name", "sales_date", "sales_person_id", "price", "quantity", "total_cost"])
 
-    for _ in range(500):
+    for _ in range(500000):
         customer_id = random.choice(customer_ids)
         store_id = random.choice(store_ids)
         product_name = random.choice(list(product_data.keys()))
