@@ -37,10 +37,3 @@ delete_local_file(config.customer_data_mart_local_file)
 logger.info("########## Deleted customer data from local########")
 
 
-logger.info("#######Deleting sales team data from local########")
-delete_local_file(config.sales_team_data_mart_local_file)
-logger.info("########## Deleted customer data from local########")
-
-logger.info("#######Deleting sales team data from local########")
-delete_local_file(config.sales_team_data_mart_partitioned_local_file)
-logger.info("########## Deleted sales data from local########")
